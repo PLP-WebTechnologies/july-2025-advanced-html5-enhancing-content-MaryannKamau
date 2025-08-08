@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form and Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, nav, section, footer {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #444;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 5px;
+            margin-top: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Multi-Section HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with validation.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li>
+    </ul>
+</nav>
+
+<section id="lists">
+    <h2>Example Lists</h2>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>HTML Basics</li>
+        <li>CSS Styling</li>
+        <li>JavaScript Fundamentals</li>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Plan the layout</li>
+        <li>Create the HTML structure</li>
+        <li>Add styling and functionality</li>
+    </ol>
+</section>
+
+<section id="table">
+    <h2>Example Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML & CSS</td>
+                <td>4 Weeks</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>6 Weeks</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Python Programming</td>
+                <td>8 Weeks</td>
+                <td>Advanced</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="media">
+    <h2>Example Media</h2>
+    <img src="https://via.placeholder.com/400x200" alt="Placeholder Image" width="400">
+    <p>Watch this quick HTML5 introduction video:</p>
+    <video width="400" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</section>
+
+<section id="form">
+    <h2>HTML5 Form with Validation</h2>
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="0712345678" pattern="[0-9]{10}" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Minimum 6 characters" required minlength="6">
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required minlength="6">
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">--Please choose an option--</option>
+                <option value="html">HTML & CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+
+            <label>Preferred Contact Method:</label>
+            <input type="radio" id="contact-email" name="contact" value="email" required>
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-phone" name="contact" value="phone" required>
+            <label for="contact-phone">Phone</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Notes</legend>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Write any additional information here..."></textarea>
+            
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the terms and conditions
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 My Web Page. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
